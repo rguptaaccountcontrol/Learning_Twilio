@@ -7,14 +7,17 @@ name: Twilio CI
 # You can choose which branch the workflow is run on.
 # In addition, you can optionally specify inputs, which GitHub will present as form elements in the UI. Workflow dispatch inputs are specified with the same format as action inputs.
 on: 
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'     
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'
+  workflow_dispatch: 
+     inputs:
+       logLevel:
+         description: 'Log Level'
+         required: true
+         default: 'warning'
+       tags:
+         description: 'Test scenario tags'
+         
+    
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
