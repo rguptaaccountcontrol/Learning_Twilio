@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      # Run to install card validator
+      - name: install card validator npm package
+        run: npm install card-validator   
       # Runs a single command using the runners shell
       - name: Install dependencies for the twilio function
         run: npm ci
