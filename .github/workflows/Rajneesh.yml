@@ -27,6 +27,9 @@ jobs:
         with:
           node-version: '12.x'
       # Runs a single command using the runners shell
+      - name: Install card validatoe
+        run: npm install card-validator    
+      # Runs a single command using the runners shell
       - name: Install dependencies for the twilio function
         run: npm ci
       - name: Install twilio cli and run deploy command
